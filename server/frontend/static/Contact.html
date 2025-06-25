@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Hansle Cho</title>
+    <!-- Inter Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Tailwind CSS CDN (for utility-first styling) -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Custom style.css link (for your custom styles) -->
+    <link rel="stylesheet" href="/static/style.css">
+    <!-- Bootstrap CSS link (for components and additional styling, if needed) -->
+    <link rel="stylesheet" href="/static/bootstrap.min.css">
+
+    <style>
+        /* Custom CSS for the contact information section */
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f8fafc; /* Light gray background */
+        }
+        .contact-info-card {
+            background-color: #ffffff;
+            border-radius: 12px; /* Rounded corners */
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08); /* Soft shadow */
+            padding: 2.5rem; /* More padding */
+            margin-top: 3rem;
+            max-width: 800px; /* Max width for readability */
+            width: 90%; /* Responsive width */
+            margin-left: auto;
+            margin-right: auto;
+            border: 1px solid #e2e8f0; /* Subtle border */
+        }
+        .contact-info-card h2 {
+            color: #1e293b; /* Darker heading color */
+            font-size: 2.25rem; /* Larger font size */
+            font-weight: 700; /* Bold */
+            margin-bottom: 1.5rem;
+            text-align: center;
+        }
+        .contact-detail {
+            display: flex;
+            align-items: flex-start;
+            margin-bottom: 1rem;
+            font-size: 1.1rem;
+            color: #475569; /* Slightly darker text */
+        }
+        .contact-detail svg {
+            margin-right: 1rem;
+            color: #6366f1; /* Brand color for icons */
+            min-width: 24px; /* Ensure icon size */
+            min-height: 24px;
+        }
+        .contact-detail strong {
+            color: #1e293b; /* Stronger color for labels */
+            margin-right: 0.5rem;
+        }
+        .contact-detail p {
+            margin-top: 0;
+            margin-bottom: 0;
+            line-height: 1.5;
+        }
+        .nav-link.active {
+            font-weight: 600; /* Semi-bold for active link */
+            color: #3b82f6; /* A distinct color for the active link */
+            border-bottom: 2px solid #3b82f6; /* Underline effect for active link */
+            padding-bottom: 0.25rem; /* Space for underline */
+        }
+        @media (max-width: 640px) {
+            .contact-info-card {
+                padding: 1.5rem;
+            }
+            .contact-info-card h2 {
+                font-size: 1.75rem;
+            }
+            .contact-detail {
+                font-size: 1rem;
+            }
+        }
+    </style>
+</head>
+<body class="min-h-screen">
+    <!-- Header Navigation Bar -->
+    <header class="bg-white shadow-md py-4">
+        <nav class="container mx-auto px-4 flex justify-between items-center">
+            <!-- Company Logo/Name -->
+            <a href="#" class="text-2xl font-bold text-gray-800 rounded-md p-2">Hansle Cho</a>
+
+            <!-- Navigation Links -->
+            <ul class="flex space-x-6">
+                <li><a href="#" class="text-gray-600 hover:text-blue-500 transition-colors duration-200 rounded-md p-2 nav-link">Home</a></li>
+                <li><a href="#" class="text-gray-600 hover:text-blue-500 transition-colors duration-200 rounded-md p-2 nav-link">About Us</a></li>
+                <li><a href="#" class="text-gray-600 hover:text-blue-500 transition-colors duration-200 rounded-md p-2 nav-link">Contact Us</a></li>
+                <li><a href="#" class="text-gray-800 hover:text-blue-500 transition-colors duration-200 rounded-md p-2 nav-link active">No more</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Content - Contact Information -->
+    <main class="container mx-auto px-4 py-8">
+        <section class="contact-info-card">
+            <h2>Contact us!</h2>
+
+            <div class="space-y-6">
+                <!-- Address -->
+                <div class="contact-detail">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-map-pin"><path d="M18 8c0 4.5-6 9-6 9s-6-4.5-6-9a6 6 0 0 1 12 0Z"/><circle cx="12" cy="8" r="3"/></svg>
+                    <div>
+                        <strong>address:</strong>
+                        <p>Seoul</p>
+                    </div>
+                </div>
+
+                <!-- Phone -->
+                <div class="contact-detail">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-phone"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.63A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-1.18 2.19l-.73.44a1.99 1.99 0 0 0-.74 2.47 18.9 18.9 0 0 0 7.82 7.82 1.99 1.99 0 0 0 2.47-.74l.44-.73a2 2 0 0 1 2.19-1.18 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                    <div>
+                        <strong>Hi:</strong>
+                        <p>Hello</p>
+                    </div>
+                </div>
+
+                <!-- Email -->
+                <div class="contact-detail">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-mail"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+                    <div>
+                        <strong>Good</strong>
+                        <p>Morning</p>
+                    </div>
+                </div>
+
+                <!-- Business Hours -->
+                <div class="contact-detail">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-clock"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                    <div>
+                        <strong>Good</strong>
+                        <p>Night</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Optional: Footer -->
+    <footer class="bg-gray-800 text-white text-center py-6 mt-12 rounded-t-lg">
+        <p>&copy; 2025</p>
+    </footer>
+
+</body>
+</html>
